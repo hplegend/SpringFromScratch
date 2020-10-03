@@ -4,7 +4,7 @@
     <groupId>SpringFromScratch</groupId>
     <artifactId>SpringFromScratch</artifactId>
     <packaging>pom</packaging>
-    <version>0.0.1</version>
+    <version>1.0-SNAPSHOT</version>
     <modules>
         <module>springLearn</module>
 
@@ -16,6 +16,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
+        <spring.properties>4.2.4.RELEASE</spring.properties>
     </properties>
 
     <dependencyManagement>
@@ -75,6 +76,12 @@
                 <groupId>com.google.code.gson</groupId>
                 <artifactId>gson</artifactId>
                 <version>2.3.1</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-context</artifactId>
+                <version>${spring.properties}</version>
             </dependency>
 
         </dependencies>
