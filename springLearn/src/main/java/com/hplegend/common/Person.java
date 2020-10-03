@@ -1,4 +1,4 @@
-package com.hplegend.quick_start_byname;
+package com.hplegend.common;
 
 /**
  * @author hp.he
