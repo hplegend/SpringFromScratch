@@ -31,7 +31,6 @@ public class JdbcTemplateFirst {
     }
 
     public static void main(String[] args) {
-
         ApplicationContext classPathXmlApplicationContext = new ClassPathXmlApplicationContext("classpath:spring-jdbc.xml");
         JdbcTemplate jdbcTemplate = (JdbcTemplate) classPathXmlApplicationContext.getBean("jdbcTemplate");
         List ret = jdbcTemplate.queryForList("select * from tbl_user");
